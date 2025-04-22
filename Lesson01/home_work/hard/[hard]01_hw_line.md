@@ -18,7 +18,15 @@
 
 ```python
 seconds = int(input("Прошло секунд: "))
-# TODO: you code here...
+x = seconds // 86400    ## дней
+seconds = seconds % 86400
+y = seconds // 3600     ## часов
+seconds = seconds % 3600
+z = seconds // 60     ## минут
+seconds = seconds % 60    
+w = seconds     ## секунд
+
+print(x, "дней", y, "часов", z, "минут", w, "секунд")
 ```
 
 ---
