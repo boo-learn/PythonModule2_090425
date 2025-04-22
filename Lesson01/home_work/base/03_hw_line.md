@@ -18,7 +18,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+v = int(input("Введите скорость: "))
+t = int(input("Введите время: "))
+
+s = v * t
+position = s % 109
+
+print("Байкер остановится на отметке", position)
 ```
 
 ---
