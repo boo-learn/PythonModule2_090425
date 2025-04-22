@@ -17,15 +17,16 @@
 ### Решение задачи
 
 ```python
-number = int(input("Введите четырехзначное число: "))
-n1 = ...
-n2 = ...
-n3 = ...
-n4 = ...
-print(n1)
-print(n2)
-print(n3)
-print(n4)
+number = int(input("Введите четырёхзначное число: "))
+first = number//1000
+second = number % 1000 // 100
+third = number % 100 // 10
+fourth = number % 10
+
+print("Первая цифра числа =", first)
+print("Вторая цифра числа =", second)
+print("Третья цифра числа =", third)
+print("Четвёртая цифра числа =", fourth)
 ```
 
 ---
