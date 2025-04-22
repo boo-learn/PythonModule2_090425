@@ -15,7 +15,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("a: "))
+b = int(input("b: "))
+
+
+perimeter = a * 2 + b * 2
+square = a * b
+
+print("P =", perimeter)
+print("S =", square)
 ```
 
 ---
