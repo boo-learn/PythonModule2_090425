@@ -21,7 +21,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n1 = int(input("Введите число: "))
+n2 = int(input("Введите число: "))
+n3 = int(input("Введите число: "))
+n4 = int(input("Введите число: "))
+
+if (n1 + n2)  % 2 == (n3 + n4)  % 2:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
