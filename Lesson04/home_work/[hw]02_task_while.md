@@ -22,9 +22,16 @@
 ```python
 n = int(input("Количество карточек: "))
 # Цикл, который выполнится n-1 раз
-while ...:
+total = n * (n + 1) // 2
+cards_sum = 0
+cards = 0
+
+while cards < n - 1 :
     card_number = int(input("Номер карточки: "))
-    ...
+    cards_sum += card_number
+    cards += 1
+
+lost_card = total - cards_sum
 
 print("Номер потерянной карточки:", ...)
 ```
