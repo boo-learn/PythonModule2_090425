@@ -3,4 +3,17 @@
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
-# TODO: your code here
+lengths = []
+longest_name = []
+
+for name in names:
+    length = len(name)
+    lengths.append(length)
+
+max_length = max(lengths)
+
+for name in names:
+    if len(name) == max_length:
+        longest_name.append(name)
+
+print(longest_name)
