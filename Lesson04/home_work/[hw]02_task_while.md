@@ -19,12 +19,20 @@
 
 ### Решение задачи
 
-```python
 n = int(input("Количество карточек: "))
-# Цикл, который выполнится n-1 раз
-while ...:
-    card_number = int(input("Номер карточки: "))
-    ...
+full_sum_card = 0
+i = 1
 
-print("Номер потерянной карточки:", ...)
+# Цикл, который выполнится n-1 раз
+
+while i <= n :
+    full_sum_card += i
+    i += 1
+sum_card = 0
+i = 1
+while i <= n  - 1:
+    card_num = int(input("Номер карточки :"))
+    sum_card += card_num
+    i += 1
+print("Номер потерянной карточки:", full_sum_card - sum_card)
 ```
