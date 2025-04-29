@@ -28,7 +28,18 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+num = int(input("Размерность таблицы :"))
+i = 1
+if 1 < num < 9 :
+    while i <= num :
+        j = 1
+        while j <= num :
+            print(f'{i * j:3}', end=" ")
+            j += 1
+        print()
+        i += 1
+else :
+    print("Не соответствует условию")
 ```
 
 ---
