@@ -3,7 +3,14 @@
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
-# TODO: your code here
+i = 0
+while i <= len(names) -1 :
+    if i == len(names) -1 :
+        print(names[i])
+    else :
+        print(names[i], end = ", ")
+    i += 1
+
 
 # Пример вывода:
 # Иван, Ирина, Вячеслав, Василий, Петр
