@@ -23,13 +23,50 @@
 ### Решение задачи
 
 ```python
-a = int(input("a: "))
+a = int(input("a: "))     # наименьшее
 b = int(input("b: "))
-c = int(input("c: "))
+c = int(input("c: "))       # наибольшее
+# с наибольшее b среднее a наименьшее
+if c > a and c > b :
+    if b > a :
+        print(a, b, c)
+        # с наибольшее а среднее b наименьшее
+    else :
+        d = b #наименьшее
+        b = a
+        a = d
+        print(a, b, c)
 
-# TODO: you code here...
+elif b > a and b > c :
+    #b наибольшее а среднее с наименьшее
+    if a > c :
+        d = c #наименьшее
+        c = b
+        b = a
+        a = d
+        print(a,b,c)
+        #b наимбольшее с среднее а наименьшее
+    else :
+        d = c
+        c = b
+        b = d
+        print(a,b,c)
+elif a > b and a > c :
+    # а наибольшее b среднее с наименьшее
+    if b > c :
+        d = c
+        c = a
+        a = d
+        print(a,b,c)
+        # а наибольшее с среднее b наименьшее
 
-print(a, b, c)
+    else :
+        d = c
+        c = a
+        a = b
+        b = d
+        print(a, b, c)
+
 ```
 
 ---
