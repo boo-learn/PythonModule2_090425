@@ -15,12 +15,22 @@
 
 ### Решение задачи
 
-```python
-summa = 0
-with open("data/info.txt", "r") as f:
-    pass
+path = "data/info.txt"
+path_out = "data/work_result.txt"
+sum_numbers = 0
+count = 0
+with open("data/info.txt", "r") as file, open(path_out, "w", encoding="UTF-8") as file_out:
+    for line in file:
+        try:
+            number = int(line.strip())
+            sum_numbers += number
+            count += 1
 
-print(f"Сумма чисел = {summa}")
+        except ValueError:
+            pass
+
+    file_out.write(f"Сумма чисел: {sum_numbers}\n")
+
 # Уточнение: в сумму добавляем только те значения, которые можно преобразовать к int'у
 # Например: int("-26") --> -26, а int("--26") --> ошибка
 ```
