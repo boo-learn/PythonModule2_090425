@@ -35,7 +35,10 @@ n = 6
 
 ```python
 n = int(input("n: "))
-# TODO: you code here...
+with open("data/pyramid.txt", "w") as file:
+    for i in range(1, n + 1):
+        line = "*" * (2 * i - 1)
+        file.write(f"{line:^{2*n-1}}\n")
 ```
 
 ---
