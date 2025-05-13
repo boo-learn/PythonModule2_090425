@@ -20,7 +20,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Введите число:"))
+all_numbers = [number]
+
+while number != 1:
+    if number % 2 == 0:
+        number = number // 2
+    else:
+        number = 3 * number +1
+    all_numbers.append(number)
+
+print(" --> ".join(str(x) for x in all_numbers))
 ```
 
 ---
