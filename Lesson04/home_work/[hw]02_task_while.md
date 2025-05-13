@@ -20,11 +20,15 @@
 ### Решение задачи
 
 ```python
-n = int(input("Количество карточек: "))
+n = int(input("Введите количество карточек: "))
+sum_remain = 0
+i = 0
 # Цикл, который выполнится n-1 раз
-while ...:
-    card_number = int(input("Номер карточки: "))
-    ...
-
-print("Номер потерянной карточки:", ...)
+while i < n - 1:
+    card_number = int(input("Введите номер одной из оставшихся карточек: "))
+    if 0 < card_number < n:
+        sum_remain += card_number
+    i += 1
+card_lost = ?
+print("Номер потерянной карточки", card_lost)
 ```
