@@ -33,10 +33,16 @@ n = 6
 
 ### Решение задачи
 
-```python
-n = int(input("n: "))
-# TODO: you code here...
-```
+n = int(input("Введите количество строк пирамиды, n: "))
+path_out = "data/pyramid.txt"
+
+with open(path_out, "w") as file:
+    length = 2 * n - 1
+    for i in range(n):
+        str_of_stars = '*' * (2 * i + 1)
+        centered_str = str_of_stars.center(length)
+        file.write(centered_str + '\n')
+
 
 ---
 <details>
