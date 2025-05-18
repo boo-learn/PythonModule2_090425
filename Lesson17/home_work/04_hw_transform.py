@@ -9,3 +9,7 @@ log_entries = [
     "Another log",
     "Contact us at support@test.co.uk"
 ]
+words = [word for line in log_entries for word in line.split()]
+emails = list(map(lambda word: word.lower(), filter(lambda word: '@' in word, words)))
+
+print(emails)
