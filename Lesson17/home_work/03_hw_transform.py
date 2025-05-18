@@ -9,3 +9,7 @@ students = [
     {'name': 'David', 'grade': 4.2},
     {'name': 'Eve', 'grade': 4.91}
 ]
+students_update = list(map(lambda s: {'name': s['name'], 'grade': round(s['grade'], 2)},
+                  filter(lambda s: s['grade'] > 4.5, students)))
+
+print(students_update)
