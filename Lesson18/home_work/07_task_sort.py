@@ -11,3 +11,15 @@
 # 10 1 3 4 3 5 6 7 7 6 1
 # Выход
 # 5
+
+data = [15, 3, 1, 4, 8, 3, 8, 1, 2, 6, 2, 6, 6, 5, 9, 4]
+
+participants = data[0]
+scores = data[1:]
+
+scores_top = sorted(set(scores), reverse=True)
+prize_scores = scores_top[:3]
+prize_winners = [score for score in scores if score in prize_scores]
+count_prize_winners = len(prize_winners)
+
+print(count_prize_winners)
