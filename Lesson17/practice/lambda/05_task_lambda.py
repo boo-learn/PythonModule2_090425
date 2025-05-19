@@ -8,3 +8,5 @@ positive_numbers = list(filter(lambda n: n > 0, mixed_numbers))
 print(positive_numbers)
 
 # Задача: перепишите код, используя lambda-функцию
+positive_numbers = list(filter(lambda num: num > 0, mixed_numbers))
+print(positive_numbers)

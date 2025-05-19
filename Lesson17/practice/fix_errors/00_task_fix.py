@@ -13,7 +13,6 @@ def get_unique_elements(data: list) -> list:
 
     return unique
 
-
 if __name__ == "__main__":
     # assert average([3, 3, 3]) == 3.0
     # assert average([0, 2, 0, 2]) == 1.0
@@ -31,3 +30,4 @@ if __name__ == "__main__":
     assert get_unique_elements([4]) == [4]
     assert get_unique_elements(["hello", "hi", "hello"]) == ["hello", "hi"]
     assert get_unique_elements(["hello", (2, 4), 3, (2, 4), 3, 3]) == ["hello", (2, 4), 3]
+

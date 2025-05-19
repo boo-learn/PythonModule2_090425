@@ -8,3 +8,5 @@ multiplied_values = list(map(multiply_by_ten, values))
 print(multiplied_values)
 
 # Задача: перепишите код, используя lambda-функцию
+multiplied_values =list(map(lambda y:y*10, values))
+print(multiplied_values)

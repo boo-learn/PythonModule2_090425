@@ -8,3 +8,5 @@ names = list(map(extract_name, people))
 print(names)
 
 # Задача: перепишите код, используя lambda-функцию
+names = list(map(lambda person: person["name"], people))
+print(names)

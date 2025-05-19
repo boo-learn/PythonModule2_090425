@@ -1,4 +1,5 @@
 # Дана функция
+
 def remove_duplicates(data: list) -> list:
     "Удаление дубликатов из списка"
     for item in data.copy():

@@ -10,3 +10,5 @@ def fibonacci_iterative(n):
         a = b
         b = next_fib
     return b
+
+print(fibonacci_iterative(100))

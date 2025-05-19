@@ -8,3 +8,5 @@ long_words = list(filter(lambda word: len(word) > 5, words))
 print(long_words)
 
 # Задача: перепишите код, используя lambda-функцию
+long_words = list(filter(lambda word: len(word) > 5, words))
+print(long_words)

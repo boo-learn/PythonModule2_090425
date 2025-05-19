@@ -7,10 +7,10 @@
 # 2. Выведите на экран название товара и его цену, используя ключи словаря
 
 item = {
-    "name": "Брюки",
-    "cost": 35,
+    "name" : "paints",
+    "price": 35,
     "quantity": 10
 }
 
 print(item)
-print(item["name"])
+print(item["name"], item["price"])

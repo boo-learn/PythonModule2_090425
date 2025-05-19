@@ -33,4 +33,8 @@ def fibonacci(n):
         return fibonacci(n - 1) + fibonacci(n - 2)
 
 # Пример использования
+<<<<<<< HEAD
+print(fibonacci(40))  # Вывод: 13
+=======
 print(fibonacci(300))  # Вывод: 13
+>>>>>>> d95380297b0cc58cc811df7263f377c45004ae2a

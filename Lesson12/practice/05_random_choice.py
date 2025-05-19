@@ -2,4 +2,7 @@
 # Создайте список элементов (например, список названий городов).
 # Выберите случайный элемента из списка.
 # Выведите на экран выбранный элемент.
+import random
+city=["Moscow", "london", "Berlin", "Paris", "Madrid", "Warshawa", "Kiev", "Bucharest"]
 
+print(random.choice(city))
