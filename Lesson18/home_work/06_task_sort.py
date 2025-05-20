@@ -13,3 +13,9 @@
 # 70
 # Пояснение:
 # Возможен такой порядок: 10 2 50 1 10
+
+prices = [10, 5, 30, 60, 15, 3]
+prices.sort(reverse=True)
+total = sum(prices[i] for i in range(0, len(prices), 2))
+
+print(total)
