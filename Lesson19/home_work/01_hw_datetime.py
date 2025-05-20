@@ -6,7 +6,7 @@
 
 def is_millennium_start(year: int) -> bool:
     # Допишите код здесь
-    return False
+    return (year - 1) % 1000 == 0
 
 # Пример использования
 year1 = 2001
