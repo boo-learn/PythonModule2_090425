@@ -13,3 +13,8 @@
 # 70
 # Пояснение:
 # Возможен такой порядок: 10 2 50 1 10
+
+numbers = [2, 50, 1, 42, 2, 50, 11, 25, 4, 14, 5]
+sorted_numbers = sorted(numbers)
+print(sorted_numbers)
+print(sum(sorted_numbers[i] for i in range(0, len(sorted_numbers), 2)))
